@@ -1,0 +1,292 @@
+
+
+.formulario .radio label,
+.formulario .checkbox label {
+  color: #001f3f;
+  padding: 10vh 15vh;
+  position: relative;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+
+  .formulario .radio label:hover,
+  .formulario .checkbox label:hover{
+    background:rgba(red, green, blue, alpha)
+  }
+
+label {
+  padding-left: 0.10em;
+  position: relative;
+}
+
+body{
+  
+  background-color: #f6f7f8;
+  font-family: "Roboto";
+  font-size: 16px;
+  height: auto;
+  width: 700px;
+  margin: auto;
+  
+}
+
+.flex-container1{
+  display: flex;
+  justify-content: start;
+}
+
+
+
+.titulo{
+	display: flex;
+	justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style:none;
+  align-items: flex-start;
+  
+  
+}
+
+/*Menu1*/
+.menu1 {
+  display: flex;
+  list-style:none;
+  justify-content:center;
+  align-items: center;
+}
+
+.button1 {
+  display: flex;
+  position: relative;
+  display: inline-block;
+  padding: 30px 45px;
+  color: black;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-size: 1em;
+  overflow: hidden;
+  transition: 0.2s;
+  font-weight:bold;
+}
+
+
+
+.desplazamiento {
+  display: flex;
+  justify-content:center;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: black;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-size: 1em;
+  overflow: hidden;
+  transition: 0.2s;
+  font-weight:bold;
+}
+
+.button span{
+  position: absolute;
+  display: block;
+}
+
+.button:hover{
+  background: #f6f7f8;
+    box-shadow: 0 0 10px #000000, 0 0 40px #0000003d, 0 0 80px #00000057;
+    transition-delay: 1s;
+  
+}
+
+#span1{
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent,#000000);
+}
+.button:hover #span1{
+  left: 100%;
+  transition: 1s;
+}
+#span3{
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent,#000000);
+}
+.button:hover #span3{
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+#span2{
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#000000);
+}
+.button:hover #span2{
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+#span4{
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#000000);
+}
+.button:hover #span4{
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+/*Index*/
+
+.contenedor-imagen{
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: flex-start;
+  height:40vh;
+  
+}
+
+.contenedor-imagen figure{
+  position:relative;
+  width: 295px;
+  height: 82px;
+  box-shadow: 0px 15px 10px
+  rgba(0, 0, 0, 0.50);
+  cursor: pointer;
+}
+
+.contenedor-imagen figure .capa{
+  width: 50%;
+  height: 50%;
+  transition: all 500ms ease-in-out;
+}
+
+.contenedor-imagen figure .capa{
+  position:absolute;
+  top:10px;
+  width: 50%;
+  height: 50%;
+}
+
+.checkbox{
+  display:flex;
+  flex-direction: row;
+  align-items: space-around;
+  justify-content: flex-start;
+  
+}
+
+.fotos{
+  margin: auto;
+  width: 700px;
+  padding: 30px;
+  list-style: none;
+  
+}
+/*Slider*/
+
+body{
+  background-color: lightgrey;
+}
+
+#kslider{
+font-family: sans-serif;
+margin: auto;
+background-color: white;
+max-width: 800px;
+width: 100%;
+padding: 30px;
+box-sizing: border-box;
+}
+
+#slider > ul, li {
+ padding: 0;
+ margin: 0;
+ list-style: none;
+}
+
+#slider > ul.slider{
+position: relative;
+max-width: 800px;
+width: 100%;
+height: 300px;
+}
+
+#slider > ul.slider h1{
+position: absolute;
+background-color: rgba(255, 255, 255, 0.6);
+padding: 10px;
+left: 50%;
+top: 100px;
+transform: translate(-50%, -50%);
+}
+
+#slider > ul.slider li {
+ position: absolute;
+ left: 0px;
+ top: 0px;
+ opacity: 0;
+ width: inherit;
+ height: inherit;
+ transition: opacity .5s;
+ background:#fff;
+}
+
+#slider > ul.slider li img{
+width: 100%;
+height: 300px;
+object-fit: cover;
+}
+
+#slider > ul.slider li:first-child {
+ opacity: 1; /*Mostrar el primer <li>*/
+}
+
+#slider > ul.slider li:target {
+ opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+#slider > .menu{
+text-align: center;
+margin: 20px;
+}
+
+#slider > .menu li{
+display: inline-block;
+text-align: center;
+}
+
+#slider > .menu li a{
+display: inline-block;
+color: white;
+text-decoration: none;
+background-color: grey;
+padding: 10px;
+width: 20px;
+height: 20px;
+font-size: 20px;
+border-radius: 100%;
+}
